@@ -31,3 +31,12 @@ $(document).ready(function () {
         $("#Rules").show();
     })
 })
+$(document).ready(function () {
+    $("#B4").click(function () {
+
+        $("#Home").show();
+        $(".Event").hide();
+        $("#Calculadora").hide();
+        $("#Rules").hide();
+    })
+})

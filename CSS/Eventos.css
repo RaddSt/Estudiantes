@@ -1,4 +1,5 @@
 ﻿@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import "node_modules/bootstrap/scss/bootstrap";
 html{
     background: linear-gradient(whitesmoke,white);
     background-repeat: no-repeat;
@@ -19,16 +20,19 @@ html{
 }
 .NAVBAR li{
     display: inline-block;
-    margin: 10px;   
+    margin: 15px;
+    
 }
 .NAVBAR li a{
     color: rgb(248, 248, 248);
+}
+#tupac{
+    text-align: center;
 }
 #A1{
     text-align: center;
 }
 #Calculadora{
-    margin: 5px;
     background: linear-gradient(whitesmoke,white);
     background-repeat: no-repeat;
 }
@@ -91,7 +95,8 @@ html{
 
 }
 .Cont {
-    position: relative;
+    
+    position: center;
     display: none;
 }
 #TextImg {
@@ -120,10 +125,25 @@ html{
 #Rules h2{
     text-align: center;
 }
-#Rules p{
-    text-align: center;
-}
+
 #Rules a{
     display: block;
     margin: auto;
+}
+#notes {
+    display: inline-flex;
+    width: 100px;
+    height: 50px;
+    margin: 15px;
+}
+#porcentaje {
+   display: inline-flex;
+    width: 100px;
+    height: 50px;
+    margin: 15px;
+}
+#resultado {
+    display: inline-flex;
+    width: 100px;
+    height: 50px;
 }

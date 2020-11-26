@@ -1,7 +1,7 @@
 $(document).ready(function () {
 	var max_fields = 10;
 	var wrapper = $(".input_fields_wrap");
-	var add_button = $(".add_field_button");
+	var add_button = $("#add_field_button");
 	
 
 	var x = 1;
@@ -13,7 +13,7 @@ $(document).ready(function () {
 		if (x < max_fields) {
 			x++;
 
-			$(wrapper).append('<div class="R1"><input type="number" class="notes" name="mytext[]"/><input type="number" class="porcentaje" name="mytext2[]"><a href="#" class="remove_field">Remove</a></div>');
+			$(wrapper).append('<div class="R1"><input type="number" class="form-control" id="notes" name="mytext[]"/><span class="input-group-addon">-</span><input type="number"  class="form-control" id="porcentaje" name="mytext2[]"><a href="#" class="remove_field">Remove</a></div>');
 			
 		}
 	});
@@ -23,11 +23,11 @@ $(document).ready(function () {
 	})
 
 
-	$(".Calcular").on("click", function (e) {
+	$("#Calcular").on("click", function (e) {
 		var resultado = 0;
 		$(".R1").each(function () {
-			var lnota = $(this).find(".notes").val()
-			var lpor = $(this).find(".porcentaje").val()
+			var lnota = $(this).find("#notes").val()
+			var lpor = $(this).find("#porcentaje").val()
 			console.log(lnota * lpor / 100)
 			resultado += lnota * lpor / 100;
 		});
